@@ -9,7 +9,7 @@ body {
 
 /* NavBar Syles */
 .header {
-  @apply w-full absolute z-10 py-12 px-12;
+  @apply w-full  z-10 py-12 px-12;
 }
 
 .nav {
@@ -58,3 +58,21 @@ body {
   animation: rainbowBackground 1.2s infinite;
 }
 /* END */
+
+/* Main Styles */
+
+.circle__container {
+  @apply flex relative justify-center items-center text-center w-full;
+}
+
+.top__circle {
+  @apply absolute rounded-full -left-36 top-1/4 transform -translate-y-1/2 bg-circle-gradient-t opacity-65 z-0  sm:w-72 lg:w-80 sm:h-72 lg:h-80;
+}
+
+.mid__circle {
+  @apply relative sm:w-96 lg:w-512 sm:h-96 lg:h-512 rounded-full bg-circle-gradient-l opacity-65 z-10;
+}
+
+.bottom__circle {
+  @apply absolute sm:w-80 lg:w-96 sm:h-80 lg:h-96  rounded-full -right-56 top-80 transform -translate-y-1/2 bg-circle-gradient-r  opacity-65 z-0;
+}
