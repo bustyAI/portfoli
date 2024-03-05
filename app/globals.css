@@ -8,8 +8,24 @@ body {
 }
 
 /* NavBar Syles */
+.header {
+  @apply w-full absolute z-10 py-12 px-12;
+}
+
+.nav {
+  @apply flex justify-between items-center;
+}
+
 .navbar__button {
   @apply hover:text-blue-600 transform hover:-translate-y-1 transition duration-300;
+}
+
+.nav_link__container {
+  @apply flex flex-row space-x-4;
+}
+
+.nav__icon {
+  @apply w-14 h-14 transition duration-300 transform hover:scale-105 hover-rainbow;
 }
 /* END */
 
@@ -39,6 +55,6 @@ body {
 }
 
 .hover-rainbow:hover {
-  animation: rainbowBackground 1s infinite;
+  animation: rainbowBackground 1.2s infinite;
 }
 /* END */
