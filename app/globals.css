@@ -3,5 +3,42 @@
 @tailwind utilities;
 
 body {
-  background-color: white;
+  background-color: black;
+  color: white;
 }
+
+/* NavBar Syles */
+.navbar__button {
+  @apply hover:text-blue-600 transform hover:-translate-y-1 transition duration-300;
+}
+/* END */
+
+/* Navbar animations */
+@keyframes rainbowBackground {
+  0% {
+    color: red;
+  }
+  17% {
+    color: orange;
+  }
+  34% {
+    color: yellow;
+  }
+  51% {
+    color: green;
+  }
+  68% {
+    color: blue;
+  }
+  85% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.hover-rainbow:hover {
+  animation: rainbowBackground 1s infinite;
+}
+/* END */
