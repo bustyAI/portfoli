@@ -15,6 +15,7 @@ const ProjectCard = ({ title, shape }) => {
         <div className=' relative bg-blue-600 w-[450px] h-[600px] rounded-lg mt-20 lg:mt-0'>
             <p className='mt-4 ml-4 text-xl font-light text-gray-300'>Project Type</p>
             <p className='mt-4 ml-4 font-bold text-2xl'>{title}</p>
+            {/* If exisit render that component and pass props */}
             {ShapeComponent ? <ShapeComponent title={title} shape={shape} /> : null}
         </div>
     )

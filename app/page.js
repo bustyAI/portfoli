@@ -16,7 +16,7 @@ export default function Home() {
       <section>
         <div className="flex flex-col lg:flex-row items-center justify-evenly mt-36">
           <ProjectCard title={"Project Name"} shape={'circle'} />
-          <ProjectCard title={"Project Name"} shape={'circle'} />
+          <ProjectCard title={"Project Name"} shape={'square'} />
         </div>
       </section>
 
