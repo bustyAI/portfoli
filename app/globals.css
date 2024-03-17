@@ -85,4 +85,19 @@ body {
 
 /* Card Styles */
 
+@keyframes pinchEffect {
+  0%,
+  100% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 50% 50% 45% 45%;
+    transform: scaleY(1.2);
+  }
+}
+
+.circle {
+  animation: pinchEffect 4s infinite ease-in-out;
+}
+
 /* END */

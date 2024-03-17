@@ -3,6 +3,7 @@ import Main from "./Main";
 import ProjectCard from "./ProjectCard";
 import CardCircle from "./CardCircle";
 import CardSquare from "./CardSquare";
+import CardTriangle from "./CardTriangle";
 
 export {
     Navbar,
@@ -10,4 +11,5 @@ export {
     ProjectCard,
     CardCircle,
     CardSquare,
+    CardTriangle,
 }
