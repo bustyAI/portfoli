@@ -91,13 +91,36 @@ body {
     border-radius: 50%;
   }
   50% {
-    border-radius: 50% 50% 45% 45%;
+    border-radius: 10px 40%/ 20px 30px;
     transform: scaleY(1.2);
   }
 }
 
+.wave__pattern {
+  --mask: radial-gradient(
+        5.5px at 50% calc(100% + 1.8px),
+        #0000 calc(99% - 4px),
+        #000 calc(101% - 4px) 99%,
+        #0000 101%
+      )
+      calc(50% - 6px) calc(50% - 3.5px + 0.5px) / 12px 7px,
+    radial-gradient(
+        5.5px at 50% -1.8px,
+        #0000 calc(99% - 4px),
+        #000 calc(101% - 4px) 99%,
+        #0000 101%
+      )
+      50% calc(50% + 3.5px) / 12px 7px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
 .circle {
   animation: pinchEffect 4s infinite ease-in-out;
+}
+
+.pentagon {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
 /* END */

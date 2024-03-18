@@ -1,12 +1,14 @@
 import React from 'react'
-import { CardCircle, CardSquare, CardTriangle } from '.'
+import { CardCircle, CardPenta, CardSquare, CardTriangle } from '.'
 
 const ProjectCard = ({ title, shape }) => {
+
 
     const shapes = {
         circle: CardCircle,
         square: CardSquare,
         triangle: CardTriangle,
+        pentagon: CardPenta,
     }
 
     // Saving compoent in var

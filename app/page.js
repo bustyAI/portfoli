@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Navbar, Main, ProjectCard } from "./components";
-import { CardCircle } from "./components";
 
 
 
@@ -14,13 +13,14 @@ export default function Home() {
       <Main />
 
       <section>
-        <div className="flex flex-col lg:flex-row items-center justify-evenly mt-36 lg:space-x-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-36 mx-auto justify-items-center lg:justify-items-stretch">
           <ProjectCard title={"Project Name"} shape={'circle'} />
           <ProjectCard title={"Project Name"} shape={'square'} />
           <ProjectCard title={"Project Name"} shape={'triangle'} />
+          <ProjectCard title={"Project Name"} shape={'pentagon'} />
         </div>
       </section>
-      <div className="circle w-32 h-32 bg-blue-500 rounded-full relative overflow-hidden"></div>
+      <div className="circle w-32 h-32 bg-blue-500 rounded-full relative"></div>
 
 
 
