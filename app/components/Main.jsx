@@ -7,7 +7,7 @@ const Main = () => {
             <div className="relative ">
                 <div className="top__circle"></div>
 
-                <div className="mid__circle"></div>
+                <div className="mid__circle bubble"></div>
                 <div className="bottom__circle"></div>
             </div>
         </div>

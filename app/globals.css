@@ -84,43 +84,72 @@ body {
 /* END */
 
 /* Card Styles */
+.card__container {
+  @apply relative bg-blue-600 w-[350px] h-[450px] lg:w-[450px] lg:h-[600px] rounded-lg mt-20 lg:mt-0;
+}
 
-@keyframes pinchEffect {
+/* END */
+
+/* Bubble effect */
+.bubble {
+  border-radius: 50%;
+  animation: float 12s cubic-bezier(0.3, 0.4, 0.5, 0.6) infinite,
+    sideWays 10s cubic-bezier(0.3, 0.4, 0.5, 0.6) infinite,
+    morphShape 14s cubic-bezier(0.3, 0.4, 0.5, 0.6) infinite;
+}
+
+@keyframes float {
   0%,
   100% {
-    border-radius: 50%;
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-5px);
   }
   50% {
-    border-radius: 10px 40%/ 20px 30px;
-    transform: scaleY(1.2);
+    transform: translateY(-15px);
   }
 }
 
-.wave__pattern {
-  --mask: radial-gradient(
-        5.5px at 50% calc(100% + 1.8px),
-        #0000 calc(99% - 4px),
-        #000 calc(101% - 4px) 99%,
-        #0000 101%
-      )
-      calc(50% - 6px) calc(50% - 3.5px + 0.5px) / 12px 7px,
-    radial-gradient(
-        5.5px at 50% -1.8px,
-        #0000 calc(99% - 4px),
-        #000 calc(101% - 4px) 99%,
-        #0000 101%
-      )
-      50% calc(50% + 3.5px) / 12px 7px;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
+@keyframes sideWays {
+  0%,
+  100% {
+    transform: translateX(0) scale(1);
+  }
+  10%,
+  90% {
+    transform: translateX(5px) scale(1.02);
+  }
+  25%,
+  75% {
+    transform: translateX(-10px) scale(1.04);
+  }
+  50% {
+    transform: translateX(10px) scale(0.98);
+  }
 }
 
-.circle {
-  animation: pinchEffect 4s infinite ease-in-out;
-}
-
-.pentagon {
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+@keyframes morphShape {
+  0%,
+  100% {
+    border-radius: 85% 59% 74% 72% / 78% 83% 90% 82%;
+    transform: scale(1.01) rotate(0deg);
+  }
+  10%,
+  90% {
+    border-radius: 67% 33% 47% 53% / 51% 49% 51% 49%;
+    transform: scale(1.02) rotate(3deg);
+  }
+  25%,
+  75% {
+    border-radius: 77% 23% 63% 37% / 44% 69% 31% 56%;
+    transform: scale(0.99) rotate(-3deg);
+  }
+  50% {
+    border-radius: 54% 46% 58% 42% / 47% 66% 34% 53%;
+    transform: scale(1.01) rotate(0deg);
+  }
 }
 
 /* END */

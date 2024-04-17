@@ -27,8 +27,6 @@ export default function Home() {
 
         </div>
       </section>
-      <div className="circle w-32 h-32 bg-blue-500 rounded-full relative"></div>
-
 
 
 
