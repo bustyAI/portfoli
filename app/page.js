@@ -20,10 +20,10 @@ export default function Home() {
 
       <section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-36 mx-auto justify-items-center lg:justify-items-stretch">
-          <ProjectCard title={"Vinfo"} shape={'circle'} type={"Fullstack"} description={descriptions.vinfo} />
-          <ProjectCard title={"Education Managment System"} shape={'square'} type={"Fullstack"} description={descriptions.edu} />
-          <ProjectCard title={"RentaRide"} shape={'triangle'} type={"Frontend"} description={descriptions.renta} />
-          <ProjectCard title={"Sports Predictions"} shape={'pentagon'} type={"Machine Learning"} description={descriptions.sports} />
+          <ProjectCard title={"Vinfo"} shape={'circle'} type={"Fullstack"} description={descriptions.vinfo} link={"https://renta-ride.vercel.app/"} />
+          <ProjectCard title={"Education Managment System"} shape={'square'} type={"Fullstack"} description={descriptions.edu} link={"https://renta-ride.vercel.app/"} />
+          <ProjectCard title={"RentaRide"} shape={'triangle'} type={"Frontend"} description={descriptions.renta} link={"https://renta-ride.vercel.app/"} />
+          <ProjectCard title={"Sports Predictions"} shape={'pentagon'} type={"Machine Learning"} description={descriptions.sports} link={"https://renta-ride.vercel.app/"} />
 
         </div>
       </section>
