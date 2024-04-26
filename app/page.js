@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Navbar, Main, ProjectCard, About } from "./components";
+import { Navbar, Main, ProjectCard, About, HrLine } from "./components";
 
 
 
@@ -14,14 +14,18 @@ export default function Home() {
 
 
   return (
-    <main className="flex flex-col min-h-screen overflow-hidden max-w-1440 mx-auto">
+    <main className="flex flex-col min-h-screen overflow-hidden max-w-1440 mx-auto mb-12 px-8">
       <Navbar />
       <Main />
+      <HrLine />
+
       <section>
         <About />
       </section>
+      <HrLine />
+
       <section>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-36 mx-auto justify-items-center lg:justify-items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-36 mx-auto justify-items-center lg:justify-items-stretch">
           <ProjectCard title={"Vinfo"} shape={'circle'} type={"Fullstack"} description={descriptions.vinfo} link={"https://renta-ride.vercel.app/"} />
           <ProjectCard title={"Education Managment System"} shape={'square'} type={"Fullstack"} description={descriptions.edu} link={"https://renta-ride.vercel.app/"} />
           <ProjectCard title={"RentaRide"} shape={'triangle'} type={"Frontend"} description={descriptions.renta} link={"https://renta-ride.vercel.app/"} />

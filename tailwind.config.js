@@ -16,6 +16,9 @@ module.exports = {
         "circle-gradient-t": 'linear-gradient(to left, #E92EFB 17%, #FF2079 46%, #440BD4 94%)',
 
       },
+      colors: {
+        'hr-gray': '#1b1818'
+      },
       maxWidth: {
         '1440': '1440px',
       },

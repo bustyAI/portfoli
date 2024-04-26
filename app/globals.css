@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background-color: #0d0c0c;
   color: white;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .main__text {
-  @apply absolute font-bold text-4xl md:text-5xl lg:text-7xl z-20 w-[500px] lg:w-[950px];
+  @apply font-light absolute text-4xl md:text-5xl lg:text-7xl z-20 w-[500px] lg:w-[950px];
 }
 
 /* END */
