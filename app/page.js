@@ -24,8 +24,21 @@ export default function Home() {
       </section>
       <HrLine />
 
+      <div className="text-center text-3xl font-semibold mt-40" >
+        <p className='text-5xl font-bold mb-20 inline-block relative overflow-hidden'
+          style={{
+            background: 'linear-gradient(to right, #EC4899 0%, #8B5CF6 100%)',
+            backgroundSize: '90% 40%',  // Increases the gradient's area, making the transition smaller
+            backgroundRepeat: 'no-repeat',
+            paddingRight: '1.6rem',
+            backgroundPosition: 'right bottom'
+          }}>
+          Projects
+        </p>
+      </div>
+
       <section>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-36 mx-auto justify-items-center lg:justify-items-stretch">
+        <div className="flex flex-col gap-10 justify-center items-center">
           <ProjectCard title={"Vinfo"} shape={'circle'} type={"Fullstack"} description={descriptions.vinfo} link={"https://renta-ride.vercel.app/"} />
           <ProjectCard title={"Education Managment System"} shape={'square'} type={"Fullstack"} description={descriptions.edu} link={"https://renta-ride.vercel.app/"} />
           <ProjectCard title={"RentaRide"} shape={'triangle'} type={"Frontend"} description={descriptions.renta} link={"https://renta-ride.vercel.app/"} />

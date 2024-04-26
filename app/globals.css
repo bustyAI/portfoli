@@ -78,14 +78,14 @@ body {
 }
 
 .main__text {
-  @apply font-light absolute text-4xl md:text-5xl lg:text-7xl z-20 w-[500px] lg:w-[950px];
+  @apply font-semibold absolute text-4xl md:text-5xl lg:text-7xl z-20 w-[500px] lg:w-[950px];
 }
 
 /* END */
 
 /* Card Styles */
 .card__container {
-  @apply relative bg-blue-600 w-[350px] h-[450px] lg:w-[450px] lg:h-[600px] rounded-lg mt-20 lg:mt-0;
+  @apply relative w-[350px] h-[450px] lg:w-[450px] lg:h-[600px] rounded-lg mt-20 lg:mt-0;
 }
 
 /* END */
