@@ -17,7 +17,7 @@ body {
 }
 
 .navbar__button {
-  @apply hover:text-blue-600 transform hover:-translate-y-1 transition duration-300;
+  @apply transform hover:-translate-y-1 transition duration-300;
 }
 
 .nav_link__container {
@@ -65,20 +65,12 @@ body {
   @apply flex relative justify-center items-center text-center w-full;
 }
 
-.top__circle {
-  @apply absolute rounded-full -left-36 top-1/4 transform -translate-y-1/2 bg-circle-gradient-t opacity-65 z-0  w-56 md:w-64 md:h-64 lg:w-80 h-56 lg:h-80;
-}
-
 .mid__circle {
   @apply relative w-72 md:w-96 md:h-96 lg:w-512 h-72 lg:h-512 rounded-full bg-circle-gradient-l opacity-65 z-10;
 }
 
-.bottom__circle {
-  @apply absolute top-56 left-48 h-64 w-64  md:w-80 lg:w-96 md:h-80 lg:h-96  rounded-full -right-56 md:-right-40 md:top-72  lg:top-96 lg:left-96  transform -translate-y-1/2 bg-circle-gradient-r  opacity-65 z-0;
-}
-
 .main__text {
-  @apply font-semibold absolute text-4xl md:text-5xl lg:text-7xl z-20 w-[500px] lg:w-[950px];
+  @apply font-semibold absolute text-2xl md:text-3xl lg:text-5xl z-20 max-w-[650px];
 }
 
 /* END */
@@ -86,6 +78,108 @@ body {
 /* Card Styles */
 .card__container {
   @apply relative w-[350px] h-[450px] lg:w-[450px] lg:h-[600px] rounded-lg mt-20 lg:mt-0;
+}
+
+.c-square {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    25% 100%,
+    25% 25%,
+    75% 25%,
+    75% 75%,
+    25% 75%,
+    25% 100%,
+    100% 100%,
+    100% 0%
+  );
+  transition: all 1s ease;
+}
+
+.card:hover .c-square {
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    25% 100%,
+    26% 70%,
+    74% 69%,
+    70% 27%,
+    24% 25%,
+    25% 100%,
+    100% 100%,
+    100% 0%
+  );
+  background-color: #440bd4;
+}
+
+.c-rhom {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: all 1s ease;
+}
+
+.card:hover .c-rhom {
+  background-color: #ff2079;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.c-hex {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+  transition: all 1s ease;
+}
+
+.card:hover .c-hex {
+  background-color: #e92efb;
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+}
+
+.c-non {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  transition: all 1s ease;
+}
+
+.card:hover .c-non {
+  background-color: #440bd4;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 0,
+    100% 0,
+    100% 100%,
+    53% 100%,
+    0 100%,
+    0 0,
+    0 0
+  );
 }
 
 /* END */

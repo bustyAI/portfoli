@@ -17,7 +17,8 @@ module.exports = {
 
       },
       colors: {
-        'hr-gray': '#1b1818'
+        'hr-gray': '#1b1818',
+        'hr-gray-hover': '#2a2626',
       },
       maxWidth: {
         '1440': '1440px',
