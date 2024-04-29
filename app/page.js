@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Navbar, Main, ProjectCard, About, HrLine } from "./components";
+import { Navbar, Main, ProjectCard, About } from "./components";
 
 
 
@@ -43,10 +42,11 @@ export default function Home() {
             </p>
           </div>
 
-          <ProjectCard title={"Vinfo"} shape={'c-square'} type={"Fullstack"} description={descriptions.vinfo} link={"https://renta-ride.vercel.app/"} />
-          <ProjectCard title={"Education Managment System"} shape={'c-rhom'} type={"Fullstack"} description={descriptions.edu} link={"https://renta-ride.vercel.app/"} />
+          <ProjectCard title={"Vinfo"} shape={'c-square'} type={"Fullstack"} description={descriptions.vinfo} link={"https://vinfo-brown.vercel.app/"} />
+          <ProjectCard title={"Education Managment System"} shape={'c-rhom'} type={"Fullstack"} description={descriptions.edu} link={"https://github.com/bustyAI/CST438-Assignment2-03/tree/v1.0secure"} />
           <ProjectCard title={"RentaRide"} shape={'c-hex'} type={"Frontend"} description={descriptions.renta} link={"https://renta-ride.vercel.app/"} />
-          <ProjectCard title={"Sports Predictions"} shape={'c-non'} type={"Machine Learning"} description={descriptions.sports} link={"https://renta-ride.vercel.app/"} />
+          <ProjectCard title={"Sports Predictions"} shape={'c-non'} type={"Machine Learning"} description={descriptions.sports} link={"https://github.com/bustyAI/football-predictions"} />
+
         </div>
       </section>
 

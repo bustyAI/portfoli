@@ -7,12 +7,11 @@ const Navbar = () => {
         <header className='header'>
 
             <nav className='nav'>
-                <PiCat className='nav__icon' />
+                <Link href={"#"}>
+                    <PiCat className='nav__icon' />
+                </Link>
                 <div className='nav_link__container'>
-                    <Link href={"#"}>
-                        <p className='navbar__button'>About</p>
-                    </Link>
-                    <Link href={"#"}>
+                    <Link href={"mailto:oscar120646@gmail.com"}>
                         <p className='navbar__button'>Contact</p>
                     </Link>
                     <Link href={"https://github.com/bustyAI"}>
