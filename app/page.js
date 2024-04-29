@@ -1,4 +1,5 @@
-import { Navbar, Main, ProjectCard, About } from "./components";
+
+import { Navbar, Main, ProjectCard, About, Techstack } from "./components";
 
 
 
@@ -17,13 +18,27 @@ export default function Home() {
       <Navbar />
       <Main />
 
-
+      <hr className=" mt-20 border-t-[30px] border-[#211e1e] shadow-md w-full"></hr>
       <section>
+        <div className="text-center mt-40">
+
+          <p className='text-6xl font-bold mb-8 inline-block relative overflow-hidden'
+            style={{
+              background: 'linear-gradient(to right, #EC4899 0%, #8B5CF6 100%)',
+              backgroundSize: '80% 40%',  // Increases the gradient's area, making the transition smaller
+              backgroundRepeat: 'no-repeat',
+              paddingRight: '1.6rem',
+              backgroundPosition: 'right bottom'
+            }}>
+            About
+
+          </p>
+
+        </div>
         <About />
       </section>
 
-
-
+      <hr className=" mb-40 border-t-[30px] border-[#211e1e] shadow-md w-full"></hr>
 
       <section>
         <div className="flex flex-col space-y-6">
@@ -40,14 +55,16 @@ export default function Home() {
               Projects
 
             </p>
-          </div>
 
+          </div>
           <ProjectCard title={"Vinfo"} shape={'c-square'} type={"Fullstack"} description={descriptions.vinfo} link={"https://vinfo-brown.vercel.app/"} />
           <ProjectCard title={"Education Managment System"} shape={'c-rhom'} type={"Fullstack"} description={descriptions.edu} link={"https://github.com/bustyAI/CST438-Assignment2-03/tree/v1.0secure"} />
           <ProjectCard title={"RentaRide"} shape={'c-hex'} type={"Frontend"} description={descriptions.renta} link={"https://renta-ride.vercel.app/"} />
           <ProjectCard title={"Sports Predictions"} shape={'c-non'} type={"Machine Learning"} description={descriptions.sports} link={"https://github.com/bustyAI/football-predictions"} />
 
         </div>
+
+
       </section>
 
 
