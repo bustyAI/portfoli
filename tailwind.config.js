@@ -11,24 +11,29 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "circle-gradient-r": 'linear-gradient(to right, #440BD4 0%, #FF2079 35%, #E92EFB 100%)',
-        "circle-gradient-l": 'linear-gradient(to left, #440BD4 0%, #FF2079 35%, #E92EFB 100%)',
-        "circle-gradient-t": 'linear-gradient(to left, #E92EFB 17%, #FF2079 46%, #440BD4 94%)',
-
+        "circle-gradient-r":
+          "linear-gradient(to right, #440BD4 0%, #FF2079 35%, #E92EFB 100%)",
+        "circle-gradient-l":
+          "linear-gradient(to left, #440BD4 0%, #FF2079 35%, #E92EFB 100%)",
+        "circle-gradient-t":
+          "linear-gradient(to left, #E92EFB 17%, #FF2079 46%, #440BD4 94%)",
       },
       colors: {
-        'hr-gray': '#1b1818',
-        'hr-gray-hover': '#2a2626',
+        "hr-gray": "#1b1818",
+        "hr-gray-hover": "#2a2626",
       },
       maxWidth: {
-        '1440': '1440px',
+        1440: "1440px",
       },
       width: {
-        '512': '512px'
+        512: "512px",
       },
       height: {
-        '512': '512px'
-      }
+        512: "512px",
+      },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],

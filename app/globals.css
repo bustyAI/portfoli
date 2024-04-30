@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-color: #0d0c0c;
   color: white;
@@ -66,7 +73,7 @@ body {
 }
 
 .mid__circle {
-  @apply relative w-72 md:w-96 md:h-96 lg:w-512 h-72 lg:h-512 rounded-full bg-circle-gradient-l opacity-65 z-10;
+  @apply relative w-72 md:w-96 md:h-96 lg:w-[424px] h-72 lg:h-[424px] rounded-full bg-circle-gradient-l opacity-65 z-10;
 }
 
 .main__text {
@@ -289,7 +296,7 @@ body {
 }
 
 .techstack > div > div:hover {
-  border-color: white;
+  border-color: #333333;
   transform: translateY(-0.5rem) translateX(0.25rem);
   transition: all 0.3s;
 }
