@@ -18,7 +18,6 @@ export default function Home() {
       <Navbar />
       <Main />
 
-      <hr className=" mt-20 border-t-[20px] border-[#211e1e] shadow-md w-full"></hr>
       <section>
         <div className="text-center mt-40">
 
@@ -38,7 +37,6 @@ export default function Home() {
         <About />
       </section>
 
-      <hr className=" mb-40 border-t-[20px] border-[#211e1e] shadow-md w-full"></hr>
 
       <section>
         <div className="flex flex-col space-y-6">
